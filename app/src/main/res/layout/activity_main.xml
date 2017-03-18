@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context="com.example.lwl.myproject.MainActivity">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/wechat"
+                android:button="@null"
+                android:text="微信"
+                style="@style/AppTheme"
+                android:id="@+id/radioButton3"
+             />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="99"
+                android:id="@+id/textView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/radioButton3"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="-10dp"
+
+                android:visibility="visible"></TextView>
+
+        </RelativeLayout>
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@mipmap/wechat"
+            android:text="微信"
+            android:id="@+id/radioButton2" />
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_marginTop="-15dp"
+            android:drawableTop="@mipmap/centerbig"
+            android:text="微信"
+            android:id="@+id/radioButton" />
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@mipmap/wechat"
+            android:text="微信"/>
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@mipmap/wechat"
+            android:text="微信"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:text="测试" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:background="@color/colorAccent"
+            android:id="@+id/textView3"
+            android:layout_toRightOf="@id/btn"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="-5dp"
+
+         ></TextView>
+
+    </RelativeLayout>
+</RelativeLayout>
