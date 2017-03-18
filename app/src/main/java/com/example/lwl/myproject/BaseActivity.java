@@ -11,5 +11,8 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
         Log.d("msg","BaseActivity");
+        /**
+         * 提交git
+         */
     }
 }
